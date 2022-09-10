@@ -1,0 +1,76 @@
+/* CSS RESET */
+* {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+li,
+nav {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* HEADER */
+
+.container {
+  width: 1157px;
+  margin: 0 auto;
+}
+header img {
+  vertical-align: middle;
+  margin-top: 20px;
+}
+header nav {
+float: right;
+}
+
+/* NAVIGATION CSS */
+
+nav {
+margin-right: 30px;
+}
+nav a {
+transition: all 0.3s;
+}
+nav a:hover{
+color:#8490ff;
+}
+nav > ul > li:hover > ul {
+visibility: visible;
+}
+nav > ul > li {
+padding: 30px 13px ;
+position: relative;
+}
+nav > ul > li > ul{
+position: absolute;
+right: 0;
+top: 100%;
+width: max-content;
+padding:5px;
+visibility: hidden;
+transition-property: visibility color;
+transition-duration: 0.3s;
+}
+nav > ul > li > ul > li {
+display: block;
+}
+nav > ul > li > ul > li > a {
+padding: 15px 95px 15px 20px ;
+display: inline-block;
+}
+
+
